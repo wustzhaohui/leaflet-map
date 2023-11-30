@@ -1,0 +1,4 @@
+build/*
+vender/*
+/src/assets/*
+/src/enum/*

@@ -1,0 +1,193 @@
+html,body,#root {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F6F6F6;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.fs10 {
+    font-size: $fs10;
+}
+.fs12 {
+    font-size: $fs12;
+}
+.fs14 {
+    font-size: $fs14;
+}
+.fs16 {
+    font-size: $fs16;
+}
+.fs18 {
+    font-size: $fs18;
+}
+.fs20 {
+    font-size: $fs20;
+}
+.fs22 {
+    font-size: $fs22;
+}
+.fs24 {
+    font-size: $fs24;
+}
+.fs26 {
+    font-size: $fs26;
+}
+.fs28 {
+    font-size: $fs28;
+}
+.fs30 {
+    font-size: $fs30;
+}
+.fs32 {
+    font-size: $fs32;
+}
+.fs34 {
+    font-size: $fs34;
+}
+.fs36 {
+    font-size: $fs36;
+}
+.fs38 {
+    font-size: $fs38;
+}
+.fs40 {
+    font-size: $fs40;
+}
+.fs42 {
+    font-size: $fs42;
+}
+.fs44 {
+    font-size: $fs44;
+}
+.fs46 {
+    font-size: $fs46;
+}
+.fs48 {
+    font-size: $fs48;
+}
+.fs50 {
+    font-size: $fs50;
+}
+.fs52 {
+    font-size: $fs52;
+}
+.fs54 {
+    font-size: $fs54;
+}
+.fs56 {
+    font-size: $fs56;
+}
+.fs58 {
+    font-size: $fs58;
+}
+.fs60 {
+    font-size: $fs60;
+}
+
+.fwb{
+    font-weight: 600;
+}
+.lh100{
+    line-height: 100%;
+}
+
+$length: 10 !default;
+$corner: 4px;
+@while $length > 0{
+    .m-l-#{$length}{
+        margin-left: $corner * $length;
+    }
+    .m-r-#{$length}{
+        margin-right: $corner * $length;
+    }
+    .m-t-#{$length}{
+        margin-top: $corner * $length;
+    }
+    .m-b-#{$length}{
+        margin-bottom: $corner * $length;
+    }
+    .m-#{$length}{
+        margin: $corner * $length;
+    }
+
+    .p-l-#{$length}{
+        padding-left: $corner * $length;
+    }
+    .p-r-#{$length}{
+        padding-right: $corner * $length;
+    }
+    .p-t-#{$length}{
+        padding-top: $corner * $length;
+    }
+    .p-b-#{$length}{
+        padding-bottom: $corner * $length;
+    }
+    .p-#{$length}{
+        padding: $corner * $length;
+    }
+  $length : $length - 1;
+}
+.text{
+    &-center{
+        text-align: center;
+    }
+    &-left{
+        text-align: left;
+    }
+    &-right{
+        text-align: right;
+    }
+}
+
+// 颜色
+.color {
+    &-white {
+        color: $white;
+    }
+    &-sub-title{
+        color: #888888;
+    }
+    &-black{
+        color: #231815;
+    }
+    &-light-grey{
+        color: #AAAAAA;
+    }
+    &-red{
+        color: #ee0a24;
+    }
+    &-orange{
+        color: #fc5531;
+    }
+    &-green{
+        color: #1eaa19;
+    }
+}
+
+// 背景
+.bg-{
+    &white{
+        background-color: $white;
+    }
+}
+
+.nav-bar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
