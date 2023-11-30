@@ -10,4 +10,3 @@ npm run start
 
 - Redux全局状态管理
 - CSS的预处理器Saas
-- 使用antd-mobile移动端UI框架
